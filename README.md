@@ -1,0 +1,1 @@
+# GCP-Functions_Framework adapted solution was developed in order of achieving the Degree of Master in Engineering at ISEL (Instituto Superior de Engenharia de Lisboa)

@@ -1,0 +1,5 @@
+{
+  "property": "image",
+  "cachingService": "nodeLocal",  
+  "redisRemoteConnectionString": "redis://default:tfm02-redispassword@34.105.181.115:6379/0"
+}
