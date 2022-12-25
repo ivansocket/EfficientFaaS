@@ -29,3 +29,32 @@ For the development of the solution the @google-cloud/functions-framework node m
   <li>functions-manager - Path - EfficientFaaS</li>
   <li>cache_proxy - Path - EfficientFaaS</li>
 </ul>
+
+# Configurations
+
+On the ConfigurationFile, 3 properties can be found and changed.
+
+<ul>
+  <li>property - A string that represents the name of the property passed in the JSON body for the request sent by the user</li>
+  <li>cachingService - A string that defines the connection that occurs on the cache_proxy module, it can have 3 different values:
+   <ul>
+   <li>nodeLocal</li>
+   <li>redisLocal</li>
+   <li>redisRemote</li>
+   </ul>
+   <li>redisRemoteConnectionString - A string that has the connection parameters for redis remote caching service</li>
+</ul>
+
+# Getting Started
+
+In order to run EfficientFaaS directly on your device:
+
+<ol>
+  <li>Install Node.js</li>
+  <li>Clone the repo  EfficientFaaS</li>
+        <code>https://github.com/ivansocket/EfficientFaaS.git</code>
+  <li>Adapt the ConfigurationFile.json to your settings, and configure the caching service</li>
+  <li>Edit the index.js file and introduce the code that you want to execute when the function is triggered</li>
+  <li>Execute EfficientFaaS by running: npx @google-cloud/functions-framework --target={nameOfTheFunction set on index.js} --port {port}</li>
+</ol>
+
